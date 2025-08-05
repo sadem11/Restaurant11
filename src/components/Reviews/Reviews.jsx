@@ -23,7 +23,7 @@ function Reviews() {
                         <CardBody>
                             <div className="p-4">
                                 <CardText>
-                                    <FontAwesomeIcon icon={faQuoteLeftAlt} size='sm' style={{color: "#198754"}} /> {review.description} <FontAwesomeIcon icon={faQuoteRightAlt} size='sm' style={{color: "#198754"}} />
+                                    <FontAwesomeIcon icon={faQuoteLeftAlt} size='sm' style={{color: "#000000ff"}} /> {review.description} <FontAwesomeIcon icon={faQuoteRightAlt} size='sm' style={{color: "#000000ff"}} />
                                 </CardText>
                             </div>
                         </CardBody>

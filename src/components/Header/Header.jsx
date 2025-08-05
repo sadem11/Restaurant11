@@ -14,11 +14,11 @@ function Header() {
                         <div className='col-xl-7 d-flex flex-column align-items-center align-items-md-start justify-content-center mt-5'>
                             <h2 className='fw-bold fs-3 text-center text-md-start'>Welcome to</h2>
                             <h1 className='text-capitalize fw-bold text-center text-md-start'>Korlake restaurant</h1>
-                            <p className='mb-4 text-center text-md-start'>Welcome to Korlake Restaurant in London, the perfect experience for special people. Our fancy restaurant will bring your special moments to another level.</p>
+                            <p className='mb-4 text-center text-md-start'>Welcome to Korlake Restaurant in Lebanon, the perfect experience for special people. Our fancy restaurant will bring your special moments to another level.</p>
                             <div className='d-flex flex-column flex-sm-row'>
                                 <MenuBtn />
                                 <Link to='/contact'>
-                                    <button type='button' className='btn btn-outline-light btn-lg rounded-0 text-capitalize mx-2 shadow'>Contact us</button>
+                                   
                                 </Link>
                             </div>
                         </div>
@@ -32,12 +32,10 @@ function Header() {
                         <div className='col-xl-7 d-flex flex-column align-items-center align-items-md-start justify-content-center mt-5'>
                             <h2 className='fw-bold fs-3 text-center text-md-start'>Welcome to</h2>
                             <h1 className='text-capitalize fw-bold text-center text-md-start'>Korlake restaurant</h1>
-                            <p className='mb-4 text-center text-md-start'>Welcome to Korlake Restaurant in London, the perfect experience for special people. Our fancy restaurant will bring your special moments to another level.</p>
+                            <p className='mb-4 text-center text-md-start'>Welcome to Korlake Restaurant in Lebanon the perfect experience for special people. Our fancy restaurant will bring your special moments to another level.</p>
                             <div className='d-flex flex-column flex-sm-row'>
                                 <MenuBtn />
-                                <Link to='/contact'>
-                                    <button type='button' className='btn btn-outline-light btn-lg rounded-0 text-capitalize mx-2 shadow'>Contact us</button>
-                                </Link>
+                              
                             </div>
                         </div>
                         <div className='col-xl-5 d-none d-xl-block'></div>
@@ -50,12 +48,10 @@ function Header() {
                         <div className='col-xl-7 d-flex flex-column align-items-center align-items-md-start justify-content-center mt-5'>
                             <h2 className='fw-bold fs-3 text-center text-md-start'>Welcome to</h2>
                             <h1 className='text-capitalize fw-bold text-center text-md-start'>Korlake restaurant</h1>
-                            <p className='mb-4 text-center text-md-start'>Welcome to Korlake Restaurant in London, the perfect experience for special people. Our fancy restaurant will bring your special moments to another level.</p>
+                            <p className='mb-4 text-center text-md-start'>Welcome to Korlake Restaurant in Lebanon, the perfect experience for special people. Our fancy restaurant will bring your special moments to another level.</p>
                             <div className='d-flex flex-column flex-sm-row'>
                                 <MenuBtn />
-                                <Link to='/contact'>
-                                    <button type='button' className='btn btn-outline-light btn-lg rounded-0 text-capitalize mx-2 shadow'>Contact us</button>
-                                </Link>
+                              
                             </div>
                         </div>
                         <div className='col-xl-5 d-none d-xl-block'></div>

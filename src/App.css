@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+style{
+   color: rgb(190, 99, 99);
+  } 
+
 .navbar .navbar-toggler:focus {
   box-shadow: none;
 }

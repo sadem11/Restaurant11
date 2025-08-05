@@ -167,7 +167,8 @@ class OldContactForm extends React.Component {
                         <Form.Control as="textarea" name="comments" cols={20} rows={3} id="comments" onChange={(event) => this.handleComments(event)} />
                     </Form.Group>
 
-                    <Button variant="success" type="submit" className='btn btn-lg mt-4' id="submit-btn">
+                 <Button variant="primary" type="submit" className='btn btn-lg mt-4' id="submit-btn">
+
                         Submit
                     </Button>
                 </Form>

@@ -21,7 +21,7 @@ function MenuSection() {
                         {food.map((food) => (
                             <li key={food.id} className='d-flex justify-content-between'>
                                 <p className='fs-4 me-5 text-capitalize fw-semibold'>{food.name}</p>
-                                <p className='fs-4 text-success'>{food.price}</p>
+                                <p className='fs-4 text-danger'>{food.price}</p>
                             </li>
                         ))}
                     </ul>
@@ -37,7 +37,7 @@ function MenuSection() {
                         {drinks.map((drink) => (
                             <li key={drink.id} className='d-flex justify-content-between'>
                                 <p className='fs-4 me-5 text-capitalize fw-semibold'>{drink.name}</p>
-                                <p className='fs-4 text-success'>{drink.price}</p>
+                                <p className='fs-4 text-danger'>{drink.price}</p>
                             </li>
                         ))}
                     </ul>

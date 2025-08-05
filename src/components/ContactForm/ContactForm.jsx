@@ -49,7 +49,7 @@ function ContactForm() {
             `;
 
             document.getElementById('contact-page').classList.add('scrolling-stop');
-            document.getElementById('footer').style.display = 'none';
+            // document.getElementById('footer').style.display = 'none';
         }
 
         setValidated(true);
@@ -112,7 +112,8 @@ function ContactForm() {
                     <Form.Control className='rounded-0' as="textarea" name="comments" cols={20} rows={3} id="comments" value={comments} onChange={(event) => setComments(event.target.value)} />
                 </Form.Group>
 
-                <Button variant="success" type="submit" className='btn btn-lg rounded-0 mt-4' id="submit-btn">
+                <Button variant="primary" type="submit" className='btn btn-danger rounded-0 mt-4' id="submit-btn">
+
                     Submit
                 </Button>
             </Form>

@@ -3,16 +3,16 @@ import './Menu.css';
 import { Card, CardBody, CardText, CardTitle } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import BreakfastImg from '../../utils/images/breakfast-img.jpg';
-import LunchImg from '../../utils/images/lunch-img.jpg';
-import DinnerImg from '../../utils/images/dinner-img.jpg';
 import DessertImg from '../../utils/images/dessert-img.jpg';
 import DrinksImg from '../../utils/images/drinks-img.jpg';
-import breakfast from '../../utils/breakfast';
-import lunch from '../../utils/lunch';
-import dinner from '../../utils/dinner';
+import pizza from '../../utils/pizza.js';
+import burger from '../../utils/burger.js';
+import fries from '../../utils/fries.js';
 import dessert from '../../utils/dessert';
 import drink from '../../utils/drink';
+import Pizza from '../../utils/images/pizza.jpg';
+import Fries from '../../utils/images/Fries.jpg';
+import Burger from '../../utils/images/burgers.jpg';
 
 function Menu() {
   return (
@@ -30,7 +30,7 @@ function Menu() {
 
       <div className='breakfast my-5'>
         <div className='container'>
-          <h2 className='text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-success'>Breakfast</h2>
+          <h2 className='text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-danger' >Pizza</h2>
           <div className='row flex-column-reverse flex-lg-row'>
             <motion.div 
               className='col-lg-6 d-flex justify-content-center'
@@ -38,7 +38,7 @@ function Menu() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
             >
-              <img src={BreakfastImg} className='img-fluid w-75 mt-4 mt-lg-0' alt="" />
+              <img src={Pizza} className='img-fluid w-75 mt-4 mt-lg-0' alt="" />
             </motion.div>
             <motion.div 
               className='col-lg-6 d-flex flex-column justify-content-around'
@@ -46,18 +46,18 @@ function Menu() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
             >
-              {breakfast.map((breakfast) => (
-                <div key={breakfast.id}>
+              {pizza.map((pizza) => (
+                <div key={pizza.id}>
                   <Card className='border-0'>
                     <CardBody>
                       <CardTitle className='text-center fs-3 text-capitalize'>
-                        {breakfast.name}
+                        {pizza.name}
                       </CardTitle>
                       <CardText className='text-center fs-5'>
-                        {breakfast.description}
+                        {pizza.description}
                       </CardText>
-                      <CardText className='text-center fs-3 fw-bold text-success'>
-                        {breakfast.price}
+                      <CardText className='text-center fs-3 fw-bold text-danger'>
+                        {pizza.price}
                       </CardText>
                     </CardBody>
                   </Card>
@@ -70,7 +70,7 @@ function Menu() {
 
       <div className='lunch bg-dark text-light py-5'>
         <div className='container'>
-          <h2 className='text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-success'>Lunch</h2>
+          <h2 className='text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-danger' >Burger</h2>
           <div className='row'>
             <motion.div 
               className='col-lg-6 d-flex flex-column justify-content-around'
@@ -78,18 +78,18 @@ function Menu() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
             >
-              {lunch.map((lunch) => (
-                <div key={lunch.id}>
+              {burger.map((burger) => (
+                <div key={burger.id}>
                   <Card className='border-0 bg-dark text-light'>
                     <CardBody>
                       <CardTitle className='text-center fs-3 text-capitalize'>
-                        {lunch.name}
+                        {burger.name}
                       </CardTitle>
                       <CardText className='text-center fs-5'>
-                        {lunch.description}
+                        {burger.description}
                       </CardText>
-                      <CardText className='text-center fs-3 fw-bold text-success'>
-                        {lunch.price}
+                      <CardText className='text-center fs-3 fw-bold text-danger'>
+                        {burger.price}
                       </CardText>
                     </CardBody>
                   </Card>
@@ -102,7 +102,7 @@ function Menu() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
             >
-              <img src={LunchImg} className='img-fluid w-75 mt-4 mt-lg-0' alt="" />
+              <img src={Burger} className='img-fluid w-75 mt-4 mt-lg-0' alt="" />
             </motion.div>
           </div>
         </div>
@@ -110,7 +110,7 @@ function Menu() {
 
       <div className='dinner my-5'>
         <div className='container'>
-          <h2 className='text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-success'>Dinner</h2>
+          <h2 className='text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-danger' >French Fries</h2>
           <div className='row flex-column-reverse flex-lg-row'>
             <motion.div 
               className='col-lg-6 d-flex justify-content-center'
@@ -118,7 +118,7 @@ function Menu() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
             >
-              <img src={DinnerImg} className='img-fluid w-75 mt-4 mt-lg-0' alt="" />
+              <img src={Fries} className='img-fluid w-75 mt-4 mt-lg-0' alt="" />
             </motion.div>
             <motion.div 
               className='col-lg-6 d-flex flex-column justify-content-around'
@@ -126,18 +126,18 @@ function Menu() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
             >
-              {dinner.map((dinner) => (
-                <div key={dinner.id}>
+              {fries.map((fries) => (
+                <div key={fries.id}>
                   <Card className='border-0'>
                     <CardBody>
                       <CardTitle className='text-center fs-3 text-capitalize'>
-                        {dinner.name}
+                        {fries.name}
                       </CardTitle>
                       <CardText className='text-center fs-5'>
-                        {dinner.description}
+                        {fries.description}
                       </CardText>
-                      <CardText className='text-center fs-3 fw-bold text-success'>
-                        {dinner.price}
+                      <CardText className='text-center fs-3 fw-bold text-danger' >
+                        {fries.price}
                       </CardText>
                     </CardBody>
                   </Card>
@@ -150,7 +150,7 @@ function Menu() {
 
       <div className='dessert bg-dark text-light py-5'>
         <div className='container'>
-          <h2 className='text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-success'>Dessert</h2>
+          <h2 className='text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-danger' >Dessert</h2>
           <div className='row'>
             <motion.div 
               className='col-lg-6 d-flex flex-column justify-content-around'
@@ -168,7 +168,7 @@ function Menu() {
                       <CardText className='text-center fs-5'>
                         {dessert.description}
                       </CardText>
-                      <CardText className='text-center fs-3 fw-bold text-success'>
+                      <CardText className='text-center fs-3 fw-bold text-danger'>
                         {dessert.price}
                       </CardText>
                     </CardBody>
@@ -190,7 +190,7 @@ function Menu() {
 
       <div className='drinks my-5'>
         <div className='container'>
-          <h2 className='text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-success'>Drinks</h2>
+          <h2 className='text-center fs-1 mb-4 mb-lg-5 text-uppercase fw-bold text-danger'>Drinks</h2>
           <div className='row flex-column-reverse flex-lg-row'>
             <motion.div 
               className='col-lg-6 d-flex justify-content-center'
@@ -213,7 +213,7 @@ function Menu() {
                       <CardTitle className='text-center fs-3 text-capitalize'>
                         {drink.name}
                       </CardTitle>
-                      <CardText className='text-center fs-3 fw-bold text-success'>
+                      <CardText className='text-center fs-3 fw-bold text-danger'>
                         {drink.price}
                       </CardText>
                     </CardBody>
@@ -232,7 +232,7 @@ function Menu() {
         transition={{ duration: 1 }}
       >
         <Link to='/contact'>
-          <button type='button' className='btn btn-success btn-lg rounded-0 text-capitalize mx-2 shadow'>Book your table</button>
+          <button type='button' className='btn btn-danger rounded-0 text-capitalize mx-2 shadow'>Book your table</button>
         </Link>
       </motion.div>
     </div>

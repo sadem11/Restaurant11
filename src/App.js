@@ -9,7 +9,7 @@ import Home from './pages/Home/Home';
 import Menu from './pages/Menu/Menu';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
-import Footer from './components/Footer/Footer';
+
 
 function App() {
   return (
@@ -17,25 +17,33 @@ function App() {
       <Navbar expand='lg' className='fixed-top bg-body-tertiary shadow'>
         <Container>
           <Navbar.Brand>
-            <Link to='/' className='navbar-brand text-success d-flex align-items-center'>
+            <Link to="/" className="navbar-brand d-flex align-items-center" style={{ color: ' rgba(192, 0, 0, 1)' }}>
+  <FontAwesomeIcon icon={faUtensils} size="xl" style={{ color: ' rgba(192, 0, 0, 1)' }} />
+  <span className="ms-3 lh-1 fw-semibold">
+    Korlake
+    <br />
+    Restaurant
+  </span>
+</Link>
+            {/* <Link to='/' className='navbar-brand text-success d-flex align-items-center'>
               <FontAwesomeIcon icon={faUtensils} size='xl' />
               <span className='ms-3 lh-1 fw-semibold'>
                 Korlake
                 <br></br>
                 Restaurant
               </span>
-            </Link>
+            </Link> */}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse className='text-center' id='basiv-navbar-nav'>
             <Nav className='me-auto justify-content-center w-100'>
-              <Link to='/' className='nav-link text-uppercase text-success text-center fw-semibold'>Home</Link>
-              <Link to='/menu' className='nav-link text-uppercase text-success text-center fw-semibold'>Menu</Link>
-              <Link to='/about' className='nav-link text-uppercase text-success text-center fw-semibold'>About</Link>
-              <Link to='/contact' className='nav-link text-uppercase text-success text-center fw-semibold'>Contact</Link>
+              <Link to='/' className='nav-link text-uppercase text-danger text-center fw-semibold'>Home</Link>
+              <Link to='/menu' className='nav-link text-uppercase text-danger text-center fw-semibold'>Menu</Link>
+              <Link to='/about' className='nav-link text-uppercase text-danger text-center fw-semibold'>About</Link>
+             
             </Nav>
             <Link to='/contact'>
-              <button type='button' className='btn btn-success rounded-0 text-capitalize my-3 my-lg-0 ms-lg-4 text-nowrap'>Book a table</button>
+              <button type='button' className='btn btn-danger text-white rounded-0 text-capitalize my-3 my-lg-0 ms-lg-4 text-nowrap'>Book a table</button>
             </Link>
           </Navbar.Collapse>
         </Container>
@@ -48,7 +56,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
       </Routes>
 
-      <Footer />
+      
     </div>
   );
 }

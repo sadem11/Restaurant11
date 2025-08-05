@@ -39,3 +39,59 @@ img {
     font-size: 3rem;
   }
 }
+
+
+/* Active light blue link */
+.active-link-blue {
+  background-color: #5bc0de !important; /* Light blue */
+  color: white !important;
+  box-shadow: 0 0 10px rgba(91, 192, 222, 0.4);
+}
+
+/* Hover effect for non-active links */
+.hover-bg-light-blue:hover {
+  background-color: #d1ecf1 !important; /* Soft sky blue */
+  color: #0c5460 !important;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+
+.hamburger {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  width: 26px;
+  margin-bottom: 1rem;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #007bff; /* Light blue */
+  border-radius: 2px;
+  transition: 0.3s ease-in-out;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
+}
+
+.hamburger:hover span {
+  background-color: #0d6efd; /* Darker blue on hover */
+}

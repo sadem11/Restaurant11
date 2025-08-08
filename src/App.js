@@ -1,6 +1,5 @@
 import './App.css';
 import { Link, Routes, Route ,useLocation } from 'react-router-dom';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUtensils } from '@fortawesome/free-solid-svg-icons';
 import Container from 'react-bootstrap/Container';
@@ -10,9 +9,9 @@ import Home from './pages/Home/Home';
 import Menu from './pages/Menu/Menu';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
-
 import AdminLogin from './pages/Login/login';
 import AdminDashboard from './pages/Dashboard/AdminDashboard';
+import AssistantComponent from './components/AssistantComponent/AssistantComponent';
 
 function App() {
   const location = useLocation();

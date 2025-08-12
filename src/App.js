@@ -13,6 +13,8 @@ import AdminLogin from './pages/Login/login';
 import AdminDashboard from './pages/Dashboard/AdminDashboard';
 import AssistantComponent from './components/AssistantComponent/AssistantComponent';
 
+const cors = require('cors');
+
 function App() {
   const location = useLocation();
   const isAdminPage = location.pathname.includes('/AdminDashboard');

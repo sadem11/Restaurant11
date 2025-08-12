@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Item = require('../models/Item');
-const Ingredient = require('../models/Ingredient');
+const Ingredient = require('../models/ingredientModel');
 
 const {protect} = require('../middlewares/authMiddleware'); // If you want routes protected
 
@@ -44,9 +44,9 @@ router.post('/', protect, async (req, res) => {
 });
 
 // Get all items
-router.get('/', protect, async (req, res) => {
+router.get('/', async (req, res) => {
   try {
-    const items = await Item.find({}).populate('ingredients.ingredient', 'name unit');
+    const items = await Item.find({});
     res.json(items);
   } catch (error) {
     res.status(500).json({ message: 'Server error', error: error.message });
@@ -56,7 +56,7 @@ router.get('/', protect, async (req, res) => {
 // Get one item by id
 router.get('/:id', protect, async (req, res) => {
   try {
-    const item = await Item.findById(req.params.id).populate('ingredients.ingredient', 'name unit');
+    const item = await Item.findById(req.params.id);
     if (!item) {
       return res.status(404).json({ message: 'Item not found' });
     }

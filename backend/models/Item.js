@@ -34,7 +34,7 @@ const itemSchema = new mongoose.Schema(
     },
     category: {
       type: String,
-      enum: ['plate', 'sandwich'],
+      enum: ['pizza', 'burger', 'fries', 'drink', 'dessert', 'other', 'plate', 'sandwich'],
       required: true,
     },
     ingredients: [ingredientSchema],

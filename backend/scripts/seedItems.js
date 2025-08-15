@@ -3,7 +3,7 @@ const Item = require('../models/Item'); // <-- use Item model now
 require('dotenv').config();
 
 const items = [
-  { name: 'Sausage Pizza', category: 'pizza', price: 14.50, imageUrl: "pizza.jpg" },
+  { name: 'Sausage Pizza', category: 'pizza', price: 14.50, imageUrl: "pizza.jpg", },
   { name: 'Margherita Pizza', category: 'pizza', price: 8.50,  imageUrl: "pizza.jpg" },
   { name: 'Pepperoni Pizza', category: 'pizza', price: 12, imageUrl: "pizza.jpg" },
   { name: 'Chicken Burger', category: 'burger', price: 7.50, imageUrl: "burgers.jpg"},

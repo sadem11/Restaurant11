@@ -40,8 +40,7 @@ app.use('/api/assistant', assistantRoutes); //assistant route
 app.get('/', (req, res) => {
   res.send('Restaurant API is running ');
 });
-const pizzaRoutes = require('./routes/pizzaRoutes');
-app.use('/api/pizzas', pizzaRoutes);
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(` Server running at http://localhost:${PORT}`);
